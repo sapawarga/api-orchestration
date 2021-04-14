@@ -11,3 +11,7 @@ type GetListRequest struct {
 	Latitude   string `httpquery:"latitude,omiempty"`
 	Longitude  string `httpquery:"longitude,omitempty"`
 }
+
+type GetDetailRequest struct {
+	ID int64 `httpparam:"id"`
+}
