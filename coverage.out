@@ -1,0 +1,17 @@
+mode: set
+github.com/sapawarga/api-orchestration/usecase/phonebook/usecase.go:18.76,23.2 1 1
+github.com/sapawarga/api-orchestration/usecase/phonebook/usecase.go:25.109,28.16 3 1
+github.com/sapawarga/api-orchestration/usecase/phonebook/usecase.go:33.2,33.18 1 1
+github.com/sapawarga/api-orchestration/usecase/phonebook/usecase.go:28.16,31.3 2 1
+github.com/sapawarga/api-orchestration/usecase/phonebook/usecase.go:36.90,39.16 3 1
+github.com/sapawarga/api-orchestration/usecase/phonebook/usecase.go:44.2,44.18 1 1
+github.com/sapawarga/api-orchestration/usecase/phonebook/usecase.go:39.16,42.3 2 1
+github.com/sapawarga/api-orchestration/usecase/phonebook/usecase.go:47.87,49.50 2 1
+github.com/sapawarga/api-orchestration/usecase/phonebook/usecase.go:53.2,53.12 1 1
+github.com/sapawarga/api-orchestration/usecase/phonebook/usecase.go:49.50,52.3 2 1
+github.com/sapawarga/api-orchestration/usecase/phonebook/usecase.go:56.90,58.50 2 1
+github.com/sapawarga/api-orchestration/usecase/phonebook/usecase.go:62.2,62.12 1 1
+github.com/sapawarga/api-orchestration/usecase/phonebook/usecase.go:58.50,61.3 2 1
+github.com/sapawarga/api-orchestration/usecase/phonebook/usecase.go:65.65,67.49 2 1
+github.com/sapawarga/api-orchestration/usecase/phonebook/usecase.go:71.2,71.12 1 1
+github.com/sapawarga/api-orchestration/usecase/phonebook/usecase.go:67.49,70.3 2 1
