@@ -7,4 +7,9 @@ const (
 	DELETED_STRING         = "deleted"
 	INACTIVED_STRING       = "inactived"
 	ACTIVED_STRING         = "actived"
+	GET                    = "GET"
+	POST                   = "POST"
+	PUT                    = "PUT"
+	DELETE                 = "DELETE"
+	PATCH                  = "PATCH"
 )

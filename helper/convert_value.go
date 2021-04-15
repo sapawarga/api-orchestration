@@ -1,6 +1,9 @@
 package helper
 
-import "time"
+import (
+	"strconv"
+	"time"
+)
 
 // SetPointerString ...
 func SetPointerString(val string) *string {
@@ -55,4 +58,16 @@ func FormatTimeFromString(stringTime string) time.Time {
 	location, _ := time.LoadLocation("Asia/Jakarta")
 	parsedTime, _ := time.ParseInLocation("2006-01-02 15:04:05", stringTime, location)
 	return parsedTime
+}
+
+// ParseFromStringToInt64 ...
+func ParseFromStringToInt64(val string) (*int64, error) {
+	if val == "" {
+		return nil, nil
+	}
+	num, err := strconv.ParseInt(val, 10, 64)
+	if err != nil {
+		return nil, err
+	}
+	return SetPointerInt64(num), nil
 }
