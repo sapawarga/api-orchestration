@@ -1,0 +1,8 @@
+{
+    "API_ENV": "staging",
+    "API_DEBUG": true,
+    "API_HTTP_ADDRESS": ":8080",
+
+    "PHONEBOOK_HOST": "0.0.0.0",
+    "PHONEBOOK_PORT": "3000"
+}
