@@ -133,3 +133,42 @@ func MakeCreatePhonebook(ctx context.Context, fs usecase.PhonebookI) endpoint.En
 		return nil, err
 	}
 }
+
+func MakeUpdatePhonebook(ctx context.Context, fs usecase.PhonebookI) endpoint.Endpoint {
+	return func(ctx context.Context, request interface{}) (response interface{}, err error) {
+		req := request.(*UpdatePhonebook)
+
+		phoneString, _ := json.Marshal(req.PhoneNumbers)
+
+		if err = fs.Update(ctx, &model.UpdatePhonebookRequest{
+			ID:             req.ID,
+			Name:           helper.GetStringFromPointer(req.Name),
+			PhoneNumbers:   string(phoneString),
+			Address:        helper.GetStringFromPointer(req.Address),
+			Description:    helper.GetStringFromPointer(req.Description),
+			RegencyID:      helper.GetInt64FromPointer(req.RegencyID),
+			DistrictID:     helper.GetInt64FromPointer(req.DistrictID),
+			VillageID:      helper.GetInt64FromPointer(req.VillageID),
+			Latitude:       helper.GetStringFromPointer(req.Latitude),
+			Longitude:      helper.GetStringFromPointer(req.Longitude),
+			CoverImagePath: helper.GetStringFromPointer(req.CoverImagePath),
+			Status:         req.Status,
+			CategoryID:     helper.GetInt64FromPointer(req.CategoryID),
+		}); err != nil {
+			return nil, err
+		}
+
+		return nil, nil
+	}
+}
+
+func MakeDeletePhonebook(ctx context.Context, fs usecase.PhonebookI) endpoint.Endpoint {
+	return func(ctx context.Context, request interface{}) (response interface{}, err error) {
+		req := request.(*GetDetailRequest)
+
+		if err = fs.Delete(ctx, req.ID); err != nil {
+			return nil, err
+		}
+		return nil, nil
+	}
+}
